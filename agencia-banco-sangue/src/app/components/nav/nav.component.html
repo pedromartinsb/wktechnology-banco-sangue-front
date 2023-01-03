@@ -1,1 +1,38 @@
-<p>nav works!</p>
+<mat-drawer-container class="container" autosize>
+  <mat-drawer #drawer class="sidenav" mode="side">
+    <img src="assets/img/side-image.svg" alt="Imagem de navegação">
+    <mat-nav-list class="nav-list">
+      <a mat-list-item routerLink="/">
+        <i class="material-icons">home</i>
+         Home
+      </a>
+      <a mat-list-item routerLink="/">
+        <i class="material-icons">person</i>
+         Candidatos por Estado
+      </a>
+      <a mat-list-item routerLink="/">
+        <i class="material-icons">donut_large</i>
+         IMC Médio
+      </a>
+      <a mat-list-item routerLink="/">
+        <i class="material-icons">account_circle</i>
+        Porcentagem de Obesidade
+      </a>
+      <a mat-list-item routerLink="/">
+        <i class="material-icons">face</i>
+        Média de Idade
+      </a>
+      <a mat-list-item routerLink="/">
+        <i class="material-icons">trending_up</i>
+        Possíveis Doadores
+      </a>
+    </mat-nav-list>
+  </mat-drawer>
+
+  <div class="example-sidenav-content">
+    <button class="menu mat-elevation-z8" (click)="drawer.toggle()" mat-icon-button>
+      <mat-icon>menu</mat-icon>
+    </button>
+  </div>
+
+</mat-drawer-container>
