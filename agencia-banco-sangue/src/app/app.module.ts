@@ -28,7 +28,7 @@ import { MatCardModule } from '@angular/material/card';
 import { NavComponent } from './components/nav/nav.component';
 import { HomeComponent } from './components/home/home.component';
 import { HeaderComponent } from './components/header/header.component';
-
+import { FindCandidatesComponent } from './components/person/find-candidates/find-candidates.component';
 // import { ToastrModule } from 'ngx-toastr';
 
 @NgModule({
@@ -36,7 +36,8 @@ import { HeaderComponent } from './components/header/header.component';
     AppComponent,
     NavComponent,
     HomeComponent,
-    HeaderComponent
+    HeaderComponent,
+    FindCandidatesComponent
   ],
   imports: [
     BrowserModule,
@@ -59,6 +60,11 @@ import { HeaderComponent } from './components/header/header.component';
     MatIconModule,
     MatListModule,
     MatCardModule,
+    // ToastrModule.forRoot({
+    //   timeOut: 4000,
+    //   closeButton: true,
+    //   progressBar: true
+    // }),
   ],
   providers: [],
   bootstrap: [AppComponent]
