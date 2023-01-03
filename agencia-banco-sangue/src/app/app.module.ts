@@ -31,6 +31,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { FindCandidatesComponent } from './components/person/find-candidates/find-candidates.component';
 import { CalculateImcComponent } from './components/person/calculate-imc/calculate-imc.component';
 import { ObesePercentageComponent } from './components/person/obese-percentage/obese-percentage.component';
+import { AgeAverageComponent } from './components/person/age-average/age-average.component';
 // import { ToastrModule } from 'ngx-toastr';
 
 @NgModule({
@@ -41,7 +42,8 @@ import { ObesePercentageComponent } from './components/person/obese-percentage/o
     HeaderComponent,
     FindCandidatesComponent,
     CalculateImcComponent,
-    ObesePercentageComponent
+    ObesePercentageComponent,
+    AgeAverageComponent
   ],
   imports: [
     BrowserModule,

@@ -1,3 +1,4 @@
+import { AgeAverageComponent } from './components/person/age-average/age-average.component';
 import { ObesePercentageComponent } from './components/person/obese-percentage/obese-percentage.component';
 import { CalculateImcComponent } from './components/person/calculate-imc/calculate-imc.component';
 import { FindCandidatesComponent } from './components/person/find-candidates/find-candidates.component';
@@ -12,7 +13,8 @@ const routes: Routes = [
       {path: 'home', component: HomeComponent},
       {path: 'candidatos-por-estado', component: FindCandidatesComponent},
       {path: 'calcular-imc-medio', component: CalculateImcComponent},
-      {path: 'porcentagem-obesos', component: ObesePercentageComponent}
+      {path: 'porcentagem-obesos', component: ObesePercentageComponent},
+      {path: 'idade-media-por-tipo-sanguineo', component: AgeAverageComponent}
     ]
   }
 ];
