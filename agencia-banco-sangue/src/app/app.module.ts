@@ -30,6 +30,7 @@ import { HomeComponent } from './components/home/home.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FindCandidatesComponent } from './components/person/find-candidates/find-candidates.component';
 import { CalculateImcComponent } from './components/person/calculate-imc/calculate-imc.component';
+import { ObesePercentageComponent } from './components/person/obese-percentage/obese-percentage.component';
 // import { ToastrModule } from 'ngx-toastr';
 
 @NgModule({
@@ -39,7 +40,8 @@ import { CalculateImcComponent } from './components/person/calculate-imc/calcula
     HomeComponent,
     HeaderComponent,
     FindCandidatesComponent,
-    CalculateImcComponent
+    CalculateImcComponent,
+    ObesePercentageComponent
   ],
   imports: [
     BrowserModule,
