@@ -29,6 +29,7 @@ import { NavComponent } from './components/nav/nav.component';
 import { HomeComponent } from './components/home/home.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FindCandidatesComponent } from './components/person/find-candidates/find-candidates.component';
+import { CalculateImcComponent } from './components/person/calculate-imc/calculate-imc.component';
 // import { ToastrModule } from 'ngx-toastr';
 
 @NgModule({
@@ -37,7 +38,8 @@ import { FindCandidatesComponent } from './components/person/find-candidates/fin
     NavComponent,
     HomeComponent,
     HeaderComponent,
-    FindCandidatesComponent
+    FindCandidatesComponent,
+    CalculateImcComponent
   ],
   imports: [
     BrowserModule,

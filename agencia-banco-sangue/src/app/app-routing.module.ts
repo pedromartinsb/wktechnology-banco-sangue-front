@@ -1,3 +1,4 @@
+import { CalculateImcComponent } from './components/person/calculate-imc/calculate-imc.component';
 import { FindCandidatesComponent } from './components/person/find-candidates/find-candidates.component';
 import { HomeComponent } from './components/home/home.component';
 import { NavComponent } from './components/nav/nav.component';
@@ -8,7 +9,8 @@ const routes: Routes = [
   {
     path: '', component: NavComponent, children: [
       {path: 'home', component: HomeComponent},
-      {path: 'candidatos-por-estado', component: FindCandidatesComponent}
+      {path: 'candidatos-por-estado', component: FindCandidatesComponent},
+      {path: 'calcular-imc-medio', component: CalculateImcComponent}
     ]
   }
 ];

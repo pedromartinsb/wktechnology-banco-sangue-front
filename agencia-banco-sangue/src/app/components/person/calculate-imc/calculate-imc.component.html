@@ -1,0 +1,47 @@
+<div class="container">
+
+  <mat-form-field appearance="standard">
+    <mat-label>Filtro</mat-label>
+    <input matInput (keyup)="applyFilter($event)" placeholder="Ex.: 10" #input>
+  </mat-form-field>
+
+  <div class="mat-elevation-z8">
+    <table mat-table [dataSource]="dataSource">
+
+      <ng-container matColumnDef="imc">
+        <th mat-header-cell *matHeaderCellDef> IMC </th>
+        <td mat-cell *matCellDef="let element"> {{element.imc | number : '1.2-2'}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="menorIntervalo">
+        <th mat-header-cell *matHeaderCellDef> Menor idade </th>
+        <td mat-cell *matCellDef="let element"> {{element.menorIntervalo}}</td>
+      </ng-container>
+
+      <ng-container matColumnDef="maiorIntervalo">
+        <th mat-header-cell *matHeaderCellDef> Maior idade </th>
+        <td mat-cell *matCellDef="let element"> {{element.maiorIntervalo}}</td>
+      </ng-container>
+
+      <ng-container matColumnDef="acoes">
+        <th mat-header-cell *matHeaderCellDef> Ações </th>
+        <td mat-cell *matCellDef="let element">
+          <a href="">
+            <i class="material-icons edit">edit</i>
+          </a>
+          <a href="">
+            <i class="material-icons delete">delete</i>
+          </a>
+        </td>
+      </ng-container>
+
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+
+    <mat-paginator [pageSizeOptions]="[5, 10, 20]"
+                   showFirstLastButtons
+                   aria-label="Select page of periodic elements">
+    </mat-paginator>
+  </div>
+</div>
