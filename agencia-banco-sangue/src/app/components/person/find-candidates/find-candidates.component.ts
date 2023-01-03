@@ -28,12 +28,15 @@ export class FindCandidatesComponent implements OnInit {
 
   find() {
     return this.service.find().subscribe(response => {
-      console.log(response);
-
-      this.ELEMENT_DATA = response;
-      this.dataSource = new MatTableDataSource<Candidate>(response);
+      this.ELEMENT_DATA = response['pessoas'];
+      this.dataSource = new MatTableDataSource<Candidate>(response['pessoas']);
       this.dataSource.paginator = this.paginator;
     });
+  }
+
+  applyFilter(event: Event) {
+    const filterValue = (event.target as HTMLInputElement).value;
+    this.dataSource.filter = filterValue.trim().toLocaleLowerCase();
   }
 
 }
